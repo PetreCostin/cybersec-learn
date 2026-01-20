@@ -1,29 +1,45 @@
-# CyberSec Learn
+# CyberSec Learn - AI Chatbot
 
-## Project Setup
-This project is structured into three main parts: Web App, Backend, and Mobile App.
+This branch includes the development of an AI-powered chatbot to assist in learning cybersecurity concepts. The bot uses OpenAI's GPT models to answer queries.
 
-### Web App
-- Built with React.js.
-- Contains authentication via Firebase.
-- Main file is `src/App.js`.
+## Features:
+- Chatbot capable of answering basic questions on cybersecurity.
+- Simple API built with Flask.
 
-### Backend
-- Built with Node.js and Express.
-- Provides APIs to fetch lessons and track progress.
+## Setup Instructions:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/PetreCostin/cybersec-learn.git
+   ```
 
-### Mobile App
-- Built with React Native.
-- Reuses the backend API.
+2. Checkout the `ai-chatbot` branch:
+   ```bash
+   git checkout ai-chatbot
+   ```
 
-## How to Run
-1. **Web App:** Run `npm start` in the `src` directory.
-2. **Backend:** Run `node backend/server.js`.
-3. **Mobile App:** Follow React Native setup.
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Dependencies
-- React
-- ReactDOM
-- Firebase
-- Express
-- Node.js
+4. Add your OpenAI API key:
+   - Open `chatbot.py` and replace `YOUR_API_KEY` with your actual OpenAI API key.
+
+5. Run the chatbot API:
+   ```bash
+   python chatbot.py
+   ```
+
+6. Test the chatbot:
+   - Use an API testing tool like Postman.
+   - Make a POST request to `http://127.0.0.1:5000/chat` with a JSON body:
+     ```json
+     {
+       "message": "What is encryption?"
+     }
+     ```
+   - Receive a chatbot response in the JSON reply.
+
+---
+
+Let me know if you have any issues or require enhancements!

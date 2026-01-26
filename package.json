@@ -1,0 +1,1 @@
+{\n  \"name\": \"default-app\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A default package.json file\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"test\": \"echo 'Error: no test specified' && exit 1\"\n  },\n  \"author\": \"\",\n  \"license\": \"ISC\"\n}
